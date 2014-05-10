@@ -44,7 +44,7 @@ if (curr.locale != "English_United States.1252") {
 
 # create plot directly on device (open - close png device)
 png(filename = "plot4.png", width = 480, height = 480,
-    bg = "transparent")
+    bg = "white")  # altered: bg = "transparent" to bg = "white" (default, ommit)
 par(mfrow = c(2,2))
 with(house_pc, {
   plot(Time, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power")

@@ -38,7 +38,7 @@ house_pc$Date = as.Date(x = house_pc$Date, format = "%d/%m/%Y")
 
 # create plot directly on device (open - close png device)
 png(filename = "plot1.png", width = 480, height = 480,
-    bg = "white")  # altered: bg = "transparent" to bg = "white" (default - ommit)
+    bg = "white")  # altered: bg = "transparent" to bg = "white" (default, ommit)
 with(house_pc, 
      hist(Global_active_power, col="red", main = "Global Active Power",
           xlab = "Global Active Power (kilowatts)"))

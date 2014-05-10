@@ -43,7 +43,7 @@ if (curr.locale != "English_United States.1252") {
 
 # create plot directly on device (open - close png device)
 png(filename = "plot3.png", width = 480, height = 480,
-    bg = "transparent")
+    bg = "white")  # altered: bg = "transparent" to bg = "white" (default, ommit)
 with(house_pc, {
   plot(Time, Sub_metering_1, type = "l", col="black", lwd = 1, xlab = "",
        ylab = "Energy sub metering")
